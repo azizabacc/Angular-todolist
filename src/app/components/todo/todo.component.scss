@@ -1,0 +1,54 @@
+.todolist-container{
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: 5%;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    height: 15vh;
+    justify-content: space-evenly;
+}
+.btn-submit{
+    border-radius: 5px;
+    height: 2rem;
+    background-color: green;
+    font-weight: bold;
+    color: white;
+}
+.input-todo{
+    font-size: 2rem;
+    border-radius: 5px;
+}
+.todos{
+    margin : 5%
+}
+.todo{
+    display: flex;
+    width: 80vw;
+    justify-content: space-around;
+    align-items: center;
+    &:hover{
+        cursor: pointer;
+        .content{transform: scale(1.1);}
+        
+    }
+}
+
+.done{
+    background-color: aqua;
+}
+.btn-delete{
+    background-color: red;
+    border-radius: 5px;
+    padding: 2%;
+    color: white;
+    &:hover{
+        cursor: pointer;
+    }
+}
+.todo{
+    font-weight: bold;
+}
